@@ -1,13 +1,16 @@
+/*The below code resets the browsers "factory settings" and styles the entire page on all three pages*/
 *{
     margin:0;
     padding:0;
     
 }
 
+/*The below code puts the fancy background pattern in on all three pages*/
 body {
     background-image: url("../images/qbkls.png")
 }
 
+/* Begin Header for all three pages*/
 /*Below is only the Joe Plukarski element at the top*/
 .Header {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -18,26 +21,20 @@ body {
     margin-left: 196px;
 }
 
-/*Below is the entire header part of the page*/
+/*Below two are the entire header part of the page*/
 .Navbar{
     background-color:#ffffff;
     height: 75px;
     border-bottom: #cccccc 2px solid;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #777777;
+    
 }
-
 .border_line {
     border-bottom: #cccccc 2px solid;
 }
 
-.main_body {
-    max-width: 960px;
-    background-color: #ffffff;
-    border: #dddddd 1px solid;
-    margin-top: 40px;
-    margin-left: 196px;
-    margin-right: 196px;
-}
-
+/*The next three style the navigation "buttons" in the header*/
 #nav_buttons {
     display: inline-block;
     float:right;
@@ -50,32 +47,50 @@ ul {
     margin: 0;
     padding: 0;
     color: #777777;
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 
 li {
     display: inline;
 }
 
+/*End Header*/
+
+/*Begin "About Me" page body*/
+/*The below is for the middle content box*/
+.main_body {
+    max-width: 960px;
+    background-color: #ffffff;
+    border: #dddddd 1px solid;
+    margin-top: 40px;
+    margin-left: 196px;
+    margin-right: 196px;
+    margin-bottom: 75px;
+
+}
+
+/*The next one styles the "About Me" column in the middle content box. This is also used for "Portfolio" and "Contact" on those respective pages*/
 .About_Me {
     font-family: 'Georgia', Times, Times New Roman, serif;
     background-color: white;
     color: #4aaaa5;
     display: inline-block;
-    padding: 20px 20px 20px 0px;
+    padding: 30px 20px 20px 0px;
     border-bottom: #cccccc 2px solid;
     margin-bottom: 20px;
     margin-left: 20px;
     width: 825px;
 }
 
-img {
+/*The next one styles the profile picture*/
+#profile_pic {
     float:left;
     margin-left: 20px;
     margin-right: 5px;
     padding: 0px 20px 0px 0px;
 }
 
+/*The next one styles the Paragraph in the "About Me" page*/
 #Text {
     color: #777777;
     line-height: 2;
@@ -83,7 +98,85 @@ img {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin-right: 20px;
 }
+/*End "About Me" page Body*/
 
+/*Start Portfolio Page Body*/
+
+/*The following two create a box around the text and float it over their respective images*/
+.container {
+    position: relative;
+    text-align: center;
+    flex: wrap;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.Projects_Titles {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #4aaaa5;
+    width: 275px;
+    padding: 15px 0px 15px 0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    display: inline-block;
+  }
+
+.column {
+    padding: 0 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+  }
+
+
+/*End Portfolio Page Body*/
+
+/*Begin Contact page*/
+
+/*The below sorts the Name, email and message sections into rows and style them*/
+.Form_sections {
+    margin: 20px;
+    color: #777777;
+    margin-left: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-right: 20px;
+}
+.Form_body {
+    margin-right:50px;
+}
+
+.form_placeholders {
+    padding: 5px 635px 5px 5px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    width: 200px;
+}
+
+#submit_button {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    
+}
+
+}
+
+.Form_sub_rows {
+    padding: 2px;
+}
+
+/*End Contact page*/
+
+/*The next two style the footer on all three pages*/
 .footer{
     background-color: #666666;
     font-family: 'Georgia', Times, Times New Roman, serif;

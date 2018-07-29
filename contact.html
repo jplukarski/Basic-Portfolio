@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact Joe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
     <!--Navbar-->
-    <div>
-            <div>
-                <h1>Joe Plukarski</h1>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>Portfolio</li>
-                    <li><a href="#"></a>Contact</li>
-                </ul>
-            </div>
+    <div class="Navbar border_line">
+        <div class="Header">
+            <h1>Joe Plukarski</h1>
         </div>
-    
+        <div id="nav_buttons">
+            <ul>
+                <li>
+                    <a href="#"></a>About |</li>
+                <li>
+                    <a href="#"></a>Portfolio |</li>
+                <li>
+                    <a href="#"></a>Contact</li>
+            </ul>
+        </div>
+    </div>
+
     <!--Body-->
-    <div>
-        <div><h1>Contact</h1></div>
+    <div class="main_body">
+
+        <div class="About_Me">
+            <h1>Contact</h1>
+        </div>
+        <div class="Form_body">
+            <div class="Form_sections">
+                <div class="Form_sub_rows">
+                    <form>Name
+                </div>
+                <div class="Form_sub_rows">
+                    <input class="form_placeholders" type="text" placeholder="Mark Zuckerberg">
+                </div>
+            </div>
+
+            <div class="Form_sections">
+                <div class="Form_sub_rows">
+                    <form>Email</form>
+                </div>
+                <div class="Form_sub_rows">
+                    <input class="form_placeholders" type="text" placeholder="Mark_Zuckerberg@facebook.com">
+                </div>
+            </div>
+
+            <div class="Form_sections">
+                <div class="Form_sub_rows">
+                    <form>Message</form>
+                </div>
+                <div class="Form_sub_rows">
+                    <input id="Message_input" class="form_placeholders" type="text" style="height:150px">
+                </div>
+<br>
+                <div>
+                    <input type="Submit" id="submit_button">
+                </div>
+            </div>
+        </div>
     </div>
-        <div>
-            <form>Name
-        </div>
-        <div>
-            <input type="text" placeholder="John Smith">
-        </div>
-
-        <div>
-            <form>Email</form>
-        </div>
-        <div>
-            <input type="text" placeholder="Example@gmail.com">
-        </div>
-
-        <div>
-            <form>Message</form>
-        </div>
-        <div>
-            <input type="text" style="height:200px">
-        </div>
-
+    </form>
+    <!--Footer-->
     <div>
-        <input type="Submit">
-    </div>
-</form>
+        <div class="footer">
+            <div>
+                <div class="footer-text">
+                    <h6>Copyright ©</h6>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
 </body>
+
 </html>
