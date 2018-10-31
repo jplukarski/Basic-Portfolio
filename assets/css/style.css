@@ -59,7 +59,7 @@ li {
 /*Begin "About Me" page body*/
 /*The below is for the middle content box*/
 .main_body {
-    max-width: 960px;
+    max-width: 768px;
     background-color: #ffffff;
     border: #dddddd 1px solid;
     margin-top: 40px;
